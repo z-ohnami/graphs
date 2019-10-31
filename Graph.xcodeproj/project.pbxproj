@@ -13,6 +13,8 @@
 		C4BF5EB0235C38090045B0C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BF5EAE235C38090045B0C8 /* Main.storyboard */; };
 		C4BF5EB2235C380B0045B0C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4BF5EB1235C380B0045B0C8 /* Assets.xcassets */; };
 		C4BF5EB5235C380B0045B0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BF5EB3235C380B0045B0C8 /* LaunchScreen.storyboard */; };
+		C4BF5EBD235C466C0045B0C8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF5EBC235C466C0045B0C8 /* GraphView.swift */; };
+		C4F31DDC236B9B7200C97813 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DDB236B9B7200C97813 /* BarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		C4BF5EB1235C380B0045B0C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4BF5EB4235C380B0045B0C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4BF5EB6235C380B0045B0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4BF5EBC235C466C0045B0C8 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		C4F31DDB236B9B7200C97813 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				C4BF5EB1235C380B0045B0C8 /* Assets.xcassets */,
 				C4BF5EB3235C380B0045B0C8 /* LaunchScreen.storyboard */,
 				C4BF5EB6235C380B0045B0C8 /* Info.plist */,
+				C4BF5EBC235C466C0045B0C8 /* GraphView.swift */,
+				C4F31DDB236B9B7200C97813 /* BarView.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				C4BF5EAD235C38090045B0C8 /* ViewController.swift in Sources */,
 				C4BF5EA9235C38090045B0C8 /* AppDelegate.swift in Sources */,
 				C4BF5EAB235C38090045B0C8 /* SceneDelegate.swift in Sources */,
+				C4BF5EBD235C466C0045B0C8 /* GraphView.swift in Sources */,
+				C4F31DDC236B9B7200C97813 /* BarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
