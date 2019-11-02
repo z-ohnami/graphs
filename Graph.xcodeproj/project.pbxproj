@@ -15,6 +15,11 @@
 		C4BF5EB5235C380B0045B0C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4BF5EB3235C380B0045B0C8 /* LaunchScreen.storyboard */; };
 		C4BF5EBD235C466C0045B0C8 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF5EBC235C466C0045B0C8 /* GraphView.swift */; };
 		C4F31DDC236B9B7200C97813 /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DDB236B9B7200C97813 /* BarView.swift */; };
+		C4F31DDF236D503B00C97813 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DDE236D503B00C97813 /* UIColorExtension.swift */; };
+		C4F31DE1236D50E900C97813 /* GraphFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DE0236D50E900C97813 /* GraphFieldView.swift */; };
+		C4F31DE3236D572000C97813 /* BlockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DE2236D572000C97813 /* BlockView.swift */; };
+		C4F31DE5236D67D100C97813 /* RandomDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DE4236D67D100C97813 /* RandomDivider.swift */; };
+		C4F31DE7236D719300C97813 /* GraphBarSeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F31DE6236D719300C97813 /* GraphBarSeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		C4BF5EB6235C380B0045B0C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4BF5EBC235C466C0045B0C8 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		C4F31DDB236B9B7200C97813 /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		C4F31DDE236D503B00C97813 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		C4F31DE0236D50E900C97813 /* GraphFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphFieldView.swift; sourceTree = "<group>"; };
+		C4F31DE2236D572000C97813 /* BlockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockView.swift; sourceTree = "<group>"; };
+		C4F31DE4236D67D100C97813 /* RandomDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomDivider.swift; sourceTree = "<group>"; };
+		C4F31DE6236D719300C97813 /* GraphBarSeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphBarSeed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 		C4BF5EA7235C38090045B0C8 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				C4F31DDD236D501400C97813 /* Extension */,
 				C4BF5EA8235C38090045B0C8 /* AppDelegate.swift */,
 				C4BF5EAA235C38090045B0C8 /* SceneDelegate.swift */,
 				C4BF5EAC235C38090045B0C8 /* ViewController.swift */,
@@ -68,9 +79,21 @@
 				C4BF5EB3235C380B0045B0C8 /* LaunchScreen.storyboard */,
 				C4BF5EB6235C380B0045B0C8 /* Info.plist */,
 				C4BF5EBC235C466C0045B0C8 /* GraphView.swift */,
+				C4F31DE6236D719300C97813 /* GraphBarSeed.swift */,
 				C4F31DDB236B9B7200C97813 /* BarView.swift */,
+				C4F31DE2236D572000C97813 /* BlockView.swift */,
+				C4F31DE0236D50E900C97813 /* GraphFieldView.swift */,
+				C4F31DE4236D67D100C97813 /* RandomDivider.swift */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		C4F31DDD236D501400C97813 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C4F31DDE236D503B00C97813 /* UIColorExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4F31DE5236D67D100C97813 /* RandomDivider.swift in Sources */,
+				C4F31DE3236D572000C97813 /* BlockView.swift in Sources */,
 				C4BF5EAD235C38090045B0C8 /* ViewController.swift in Sources */,
 				C4BF5EA9235C38090045B0C8 /* AppDelegate.swift in Sources */,
 				C4BF5EAB235C38090045B0C8 /* SceneDelegate.swift in Sources */,
+				C4F31DE1236D50E900C97813 /* GraphFieldView.swift in Sources */,
 				C4BF5EBD235C466C0045B0C8 /* GraphView.swift in Sources */,
 				C4F31DDC236B9B7200C97813 /* BarView.swift in Sources */,
+				C4F31DDF236D503B00C97813 /* UIColorExtension.swift in Sources */,
+				C4F31DE7236D719300C97813 /* GraphBarSeed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

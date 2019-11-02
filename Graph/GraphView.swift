@@ -31,9 +31,24 @@ class GraphView: UIView {
     }
 
     func drawStackbarGraph() {
-        let bar1 = BarView()
-        bar1.frame = CGRect(x: 10.0, y: 10.0, width: frame.width - 20.0, height: 200.0)
-        addSubview(bar1)
+        let graphFieldView = GraphFieldView()
+        graphFieldView.frame = CGRect(x: 10.0, y: 10.0, width: frame.width - 20.0, height: 200.0)
+        addSubview(graphFieldView)
+
+        for i in 0...2 {
+            let bar = BarView()
+            bar.frame = CGRect(x: 10.0, y: 10.0 + (50.0 * CGFloat(i)), width: graphFieldView.frame.width - 20.0, height: 40.0)
+            bar.drawGraph()
+            graphFieldView.addSubview(bar)
+        }
+        
+//        let bar1 = BarView()
+//        bar1.frame = CGRect(x: 10.0, y: 10.0, width: graphFieldView.frame.width - 20.0, height: 40.0)
+//        graphFieldView.addSubview(bar1)
+//
+//        let bar2 = BarView()
+//        bar2.frame = CGRect(x: 10.0, y: 60.0, width: graphFieldView.frame.width - 20.0, height: 40.0)
+//        graphFieldView.addSubview(bar2)
     }
 }
 
