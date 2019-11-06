@@ -20,6 +20,10 @@ class ViewController: UIViewController {
 //        graphView.drawLineGraph()
 
         // 積み上げグラフ
-        graphView.drawStackbarGraph()
+//        graphView.drawStackbarGraph()
+        
+        // 普通の折れ線グラフ その2
+        graphView.drawLineGraph2()
+
     }
 }

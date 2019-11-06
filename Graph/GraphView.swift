@@ -20,7 +20,7 @@ class GraphView: UIView {
         
         stroke1.color = UIColor.cyan
         stroke2.color = UIColor.magenta
-        
+
         let graphFrame = LineStrokeGraphFrame(strokes: [stroke1, stroke2])
         
         let lineGraphView = UIView(frame: CGRect(x: 0, y: 20, width: frame.width, height: 200))
@@ -41,14 +41,45 @@ class GraphView: UIView {
             bar.drawGraph()
             graphFieldView.addSubview(bar)
         }
+    }
+
+    func drawLineGraph2() {
+        // 座標情報の作成
+        var pointList = Array<CGPoint>()
+        let pointCount = 20
+        let dx = Int(frame.width) / pointCount
+        let height = UInt32(frame.height) / 2
+        for n in 1...pointCount {
+            let px = CGFloat(dx * n)
+            let py = CGFloat(arc4random_uniform(height) + 50)
+            let point = CGPoint(x: px, y: py)
+            pointList.append(point)
+        }
+
+        // グラフのパスを作る
+        let size:CGSize = bounds.size
+        UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
         
-//        let bar1 = BarView()
-//        bar1.frame = CGRect(x: 10.0, y: 10.0, width: graphFieldView.frame.width - 20.0, height: 40.0)
-//        graphFieldView.addSubview(bar1)
-//
-//        let bar2 = BarView()
-//        bar2.frame = CGRect(x: 10.0, y: 60.0, width: graphFieldView.frame.width - 20.0, height: 40.0)
-//        graphFieldView.addSubview(bar2)
+        let drawPath = UIBezierPath()
+        drawPath.move(to: pointList[0])
+        
+        pointList.removeFirst()
+        for pt in pointList {
+            drawPath.addLine(to: pt)
+        }
+
+        // 描画
+        UIColor.blue.setStroke()
+        drawPath.lineWidth = 2.0
+        drawPath.lineJoinStyle = .round
+        drawPath.setLineDash([4.0, 2.0], count: 2, phase: 0.0)
+        drawPath.stroke()
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let drawView = UIImageView(image: image)
+        addSubview(drawView)
     }
 }
 
